@@ -28,20 +28,16 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
-        title: Text('KELOMPOK EMPAT'),
-        actions: [
-          Icon(Icons.notifications),
-          SizedBox(
-            width: 10,
+      body: Center(
+        child: Container(
+          child: ListTile(
+            leading: Icon(Icons.notifications),
+            title: Text('title'),
+            subtitle: Text('subtitle'),
+            trailing: Icon(Icons.access_time_outlined),
+            tileColor: Colors.grey.shade200,
           ),
-          Icon(Icons.account_circle),
-          SizedBox(
-            width: 16,
-          ),
-        ],
+        ),
       ),
     );
   }

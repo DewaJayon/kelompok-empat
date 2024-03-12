@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
-        title: Text('KELOMPOK EMPAT'),
+        title: Text('Appbar'),
         actions: [
           Icon(Icons.notifications),
           SizedBox(

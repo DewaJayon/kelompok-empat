@@ -28,20 +28,11 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
-        title: Text('KELOMPOK EMPAT'),
-        actions: [
-          Icon(Icons.notifications),
-          SizedBox(
-            width: 10,
-          ),
-          Icon(Icons.account_circle),
-          SizedBox(
-            width: 16,
-          ),
-        ],
+        onPressed: () {},
+        child: Icon(Icons.add),
       ),
     );
   }
