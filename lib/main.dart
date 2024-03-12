@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:pertama/appbar.dart';
+import 'package:pertama/column.dart';
+import 'package:pertama/listview.dart';
+import 'package:pertama/row.dart';
+import 'package:pertama/singlechild.dart';
+import 'package:pertama/text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,21 +34,8 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
-        title: Text('KELOMPOK EMPAT'),
-        actions: [
-          Icon(Icons.notifications),
-          SizedBox(
-            width: 10,
-          ),
-          Icon(Icons.account_circle),
-          SizedBox(
-            width: 16,
-          ),
-        ],
-      ),
+      appBar: NavBar(),
+      body: const KelompokListView(),
     );
   }
 }
