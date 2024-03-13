@@ -1,29 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+class KelompokButton extends StatelessWidget {
+  const KelompokButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,8 +12,8 @@ class MyHomePage extends StatelessWidget {
           children: [
             TextButton(
               onPressed: () {},
-              child: Text(
-                'Text Button',
+              child: const Text(
+                'Ayang',
                 style: TextStyle(
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,
@@ -49,7 +27,7 @@ class MyHomePage extends StatelessWidget {
                 foregroundColor: Colors.white,
               ),
               onPressed: () {},
-              child: Text('Elevated Button'),
+              child: const Text('Klik ini jika kamu masih sayang akuu!'),
             ),
             FilledButton(
               style: FilledButton.styleFrom(
@@ -57,7 +35,8 @@ class MyHomePage extends StatelessWidget {
                 foregroundColor: Colors.white,
               ),
               onPressed: () {},
-              child: Text('Filled Button'),
+              child: const Text(
+                  'sama aja seperti di atas cuma yang ini rasa stroberry'),
             )
           ],
         ),

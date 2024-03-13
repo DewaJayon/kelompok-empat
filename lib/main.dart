@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:pertama/appbar.dart';
+import 'package:pertama/button.dart';
 import 'package:pertama/column.dart';
+import 'package:pertama/container.dart';
+import 'package:pertama/floating_button.dart';
+import 'package:pertama/image.dart';
+import 'package:pertama/listtile.dart';
 import 'package:pertama/listview.dart';
 import 'package:pertama/row.dart';
 import 'package:pertama/singlechild.dart';
@@ -35,7 +40,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: NavBar(),
-      body: const KelompokListView(),
+      body: const KelompokText(),
     );
   }
 }

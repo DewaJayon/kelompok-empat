@@ -7,8 +7,8 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
-        title: Text('KELOMPOK EMPAT'),
-        actions: [
+        title: const Text('KELOMPOK EMPAT'),
+        actions: const [
           Icon(Icons.notifications),
           SizedBox(
             width: 10,
@@ -23,5 +23,5 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
