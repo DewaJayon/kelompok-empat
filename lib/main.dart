@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pertama/tipe-data/boolean.dart';
+import 'package:pertama/tipe-data/common_variabel.dart';
+import 'package:pertama/tipe-data/final_variabel.dart';
+import 'package:pertama/tipe-data/integer.dart';
 import 'package:pertama/tipe-data/list.dart';
 import 'package:pertama/tipe-data/map.dart';
 import 'package:pertama/tipe-data/statefull.dart';
@@ -39,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: KelompokNavBar(),
-      body: const KelompokMap(),
+      body: const KelompokInteger(),
     );
   }
 }
