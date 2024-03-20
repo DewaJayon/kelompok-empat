@@ -39,7 +39,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: NavBar(),
+      appBar: KelompokNavBar(),
       body: const KelompokText(),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class NavBar extends StatelessWidget implements PreferredSizeWidget {
+class KelompokNavBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

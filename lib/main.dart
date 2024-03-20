@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:pertama/tipe-data/boolean.dart';
+import 'package:pertama/tipe-data/list.dart';
+import 'package:pertama/tipe-data/map.dart';
+import 'package:pertama/tipe-data/statefull.dart';
+import 'package:pertama/tipe-data/string.dart';
+import 'package:pertama/widget/appbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,41 +35,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Map profile = {
-    'firstName': 'Kusuma',
-    'lastName': 'Wardana',
-    'jurusan': 'Ilmu Komputer',
-    'tinggi': 180,
-  };
-
-  void jalankan() {
-    profile['firstName'] = 'Mahendra';
-    profile['lastName'] = 'Wardana';
-    profile['jurusan'] = 'Sistem Informasi';
-    profile['tinggi'] = 170;
-    setState(() {});
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Nama Depan : ${profile['firstName']}'),
-            Text('nama Belakang : ${profile['lastName']}'),
-            Text('Jurusan : ${profile['jurusan']}'),
-            Text('Tinggi : ${profile['tinggi']}'),
-            ElevatedButton(
-              onPressed: () {
-                jalankan();
-              },
-              child: const Text('Tekan'),
-            )
-          ],
-        ),
-      ),
+      appBar: KelompokNavBar(),
+      body: const KelompokMap(),
     );
   }
 }
